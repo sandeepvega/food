@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+           document.getElementById('dis').innerHTML = "Web Page Design is a one<br> of the <br> web development";
+        }
+        // function fun2()
+        // {
+        //     document.getElementById('evn').innerHTML = "";
+        // }
+    </script>
+    <style>
+         .info{
+            font-size: 52px;
+            color: lightcoral;
+            position: relative;
+            animation-name: vega;
+            animation-duration: 10s;
+         }
+         @keyframes vega {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top:0px;
+                left: 500px;
+            }
+         }
+         /* .san{
+            animation-name: ss;
+            animation-duration: 5s;
+            position: relative;
+         }
+         @keyframes ss {
+            50%{
+                top: 0px;
+                left: 0px;
+            }
+            100%{
+                top:0px;
+                left: 500px;
+            }
+            
+         } */
+    </style>
+
+</head>
+<body>
+    <h1>Js Events</h1>
+    <!-- onclick
+        onmouseover
+        onmouseout
+        onmouseup
+        ommousedown
+        onmousemove -->
+
+        <h1 class="info" id="dis"></h1>
+
+        <button onmousemove="fun()">click </button>
+
+        <!-- <div class="san" id="evn" onclick="fun2()">
+            
+            <img src="chicken-biryani.jpeg" alt="" width="200" height="200">
+        </div> -->
+</body>
+</html>
